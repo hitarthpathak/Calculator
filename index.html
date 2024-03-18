@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Calculator</title>
+
+    <link rel="icon" href="Images/Icon.jpg">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <form>
+
+            <div class="answer">
+
+                <input type="text" class="input" placeholder="0" name="abc" readonly>
+
+            </div>
+
+            <br>
+
+            <hr>
+            <hr>
+            <hr>
+
+            <br>
+
+            <div class="buttonframe">
+
+                <input type="button" class="buttons" value="All Clear" onclick="abc.value = '' ">
+                <input type="button" class="buttons" value="Delete" onclick="abc.value = abc.value.toString().slice(0,-1)">
+                <input type="button" class="buttons" value="." onclick="abc.value += '.' ">
+                <input type="button" class="buttons" value="/" onclick="abc.value += '/' "> <br>
+                <input type="button" class="buttons" value="7" onclick="abc.value += '7' ">
+                <input type="button" class="buttons" value="8" onclick="abc.value += '8' ">
+                <input type="button" class="buttons" value="9" onclick="abc.value += '9' ">
+                <input type="button" class="buttons" value="x" onclick="abc.value += '*' "> <br>
+                <input type="button" class="buttons" value="4" onclick="abc.value += '4' ">
+                <input type="button" class="buttons" value="5" onclick="abc.value += '5' ">
+                <input type="button" class="buttons" value="6" onclick="abc.value += '6' ">
+                <input type="button" class="buttons" value="-" onclick="abc.value += '-' "> <br>
+                <input type="button" class="buttons" value="1" onclick="abc.value += '1' ">
+                <input type="button" class="buttons" value="2" onclick="abc.value += '2' ">
+                <input type="button" class="buttons" value="3" onclick="abc.value += '3' ">
+                <input type="button" class="buttons" value="+" onclick="abc.value += '+' "> <br>
+                <input type="button" class="buttons" value="00" onclick="abc.value += '00' ">
+                <input type="button" class="buttons" value="0" onclick="abc.value += '0' ">
+                <input type="button" class="buttons result" value="=" onclick="abc.value = eval(abc.value)">
+
+            </div>
+
+        </form>
+
+        <br>
+
+        <hr>
+        <hr>
+        <hr>
+
+        <br>
+
+        <h3>Calculator</h3>
+
+    </div>
+
+</body>
+
+</html>
